@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Add Category</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="stacked">Your category in {{categoryName}}</ion-label>
+    <ion-input [(ngModel)]="name" name="name" placeholder="Enter Your Category"></ion-input>
+    <p style="color:red" *ngIf="name==''">Please Enter Category</p>
+    <p>{{count}}</p>
+  </ion-item>
+  <ion-button (click)="submit()">Save</ion-button>
+  <ion-button (click)="cancel()" color="medium">Cancel</ion-button>
+</ion-content>

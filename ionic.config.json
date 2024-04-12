@@ -1,0 +1,7 @@
+{
+  "name": "askEHS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
